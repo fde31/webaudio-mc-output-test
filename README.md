@@ -30,7 +30,7 @@ Creates a single [AudioWorkletNode](https://developer.mozilla.org/en-US/docs/Web
 
 Both examples show that it's possible to talk to distinct audio channels on an audio output device. However, albeit `channelCountMode` being set to `explicit` and `channelInterpretation` to `discrete` there seems to be some mixing and summing in the mix when the `channelCount` of the destination is not set to its `maxChannelCount`.
 
-I've tried with a virtual [Blackhole](https://github.com/ExistentialAudio/BlackHole) 16ch device as well as a MOTU UltraLite mk4. It became very apparent that there might be some mixing happening with the Blackhole virtual device when the `channelCount` does not equal `maxChannelCount`. One example is setting the destination count to 4 and always ending up with active output channels, regardless of the selected source count.
+I've tried with a virtual [Blackhole](https://github.com/ExistentialAudio/BlackHole) 16ch device as well as a MOTU UltraLite mk4. It became very apparent that there might be some mixing happening with the Blackhole virtual device when the `channelCount` does not equal `maxChannelCount`. One example is setting the destination count to 4 which leads to me always ending up with 2 active output channels, regardless of the selected source count.
 
 Additional links:
 
