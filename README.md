@@ -34,6 +34,8 @@ I've tried with a virtual [Blackhole](https://github.com/ExistentialAudio/BlackH
 
 In all scenarios there was no difference present between the Worklet and the Oscillator example.
 
+The following testes were run on a 2019 i7 16" MacBook Pro on macOS 13.2.1
+
 ### Chrome v114.0.5735.198
 
 **Blackhole 16ch**
